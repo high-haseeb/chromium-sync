@@ -1,6 +1,6 @@
-# Brave Sync Server v2
+# Chromium Sync Server v2
 
-A sync server implemented in go to communicate with Brave sync clients using
+A sync server implemented in go to communicate with chromium sync clients using
 [components/sync/protocol/sync.proto](https://cs.chromium.org/chromium/src/components/sync/protocol/sync.proto).
 Current Chromium version for sync protocol buffer files used in this repo is Chromium 116.0.5845.183.
 
@@ -21,7 +21,7 @@ Currently we use dynamoDB as the datastore, the schema could be found in `schema
 1. Clone this repo
 2. Run `make docker`
 3. Run `make docker-up`
-4. To connect to your local server from a Brave browser client use `--sync-url="http://localhost:8295/v2"`
+4. To connect to your local server from a browser client use `--sync-url="http://localhost:8295/v2"`
 5. For running unit tests, run `make docker-test`
 
 # Updating protocol definitions
